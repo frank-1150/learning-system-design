@@ -1,0 +1,20 @@
+{
+  "name": "learning-system-design",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A Chinese DDIA walkthrough and system design interview learning site.",
+  "scripts": {
+    "content:generate": "python3 scripts/generate_content.py",
+    "content:check": "python3 scripts/validate_content.py",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "npm run content:check && vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.13"
+  }
+}
+

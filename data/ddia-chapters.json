@@ -1,0 +1,212 @@
+[
+  {
+    "chapterId": "00-front-matter",
+    "chapter": 0,
+    "order": 0,
+    "part": "front",
+    "slug": "00-front-matter",
+    "titleZh": "前言与全书导读",
+    "titleEn": "Front Matter",
+    "sourcePages": {
+      "start": 1,
+      "end": 24
+    },
+    "pageCount": 24,
+    "privatePdf": "private/books/ddia/parts/00-front-matter.pdf"
+  },
+  {
+    "chapterId": "ch01",
+    "chapter": 1,
+    "order": 1,
+    "part": "foundations",
+    "slug": "reliable-scalable-maintainable",
+    "titleZh": "可靠、可扩展与可维护",
+    "titleEn": "Reliable, Scalable, and Maintainable Applications",
+    "sourcePages": {
+      "start": 25,
+      "end": 48
+    },
+    "pageCount": 24,
+    "privatePdf": "private/books/ddia/parts/01-reliable-scalable-maintainable.pdf"
+  },
+  {
+    "chapterId": "ch02",
+    "chapter": 2,
+    "order": 2,
+    "part": "foundations",
+    "slug": "data-models-query-languages",
+    "titleZh": "数据模型与查询语言",
+    "titleEn": "Data Models and Query Languages",
+    "sourcePages": {
+      "start": 49,
+      "end": 90
+    },
+    "pageCount": 42,
+    "privatePdf": "private/books/ddia/parts/02-data-models-query-languages.pdf"
+  },
+  {
+    "chapterId": "ch03",
+    "chapter": 3,
+    "order": 3,
+    "part": "foundations",
+    "slug": "storage-retrieval",
+    "titleZh": "存储与检索",
+    "titleEn": "Storage and Retrieval",
+    "sourcePages": {
+      "start": 91,
+      "end": 132
+    },
+    "pageCount": 42,
+    "privatePdf": "private/books/ddia/parts/03-storage-retrieval.pdf"
+  },
+  {
+    "chapterId": "ch04",
+    "chapter": 4,
+    "order": 4,
+    "part": "foundations",
+    "slug": "encoding-evolution",
+    "titleZh": "编码与演化",
+    "titleEn": "Encoding and Evolution",
+    "sourcePages": {
+      "start": 133,
+      "end": 166
+    },
+    "pageCount": 34,
+    "privatePdf": "private/books/ddia/parts/04-encoding-evolution.pdf"
+  },
+  {
+    "chapterId": "ch05",
+    "chapter": 5,
+    "order": 5,
+    "part": "distributed-data",
+    "slug": "replication",
+    "titleZh": "复制",
+    "titleEn": "Replication",
+    "sourcePages": {
+      "start": 167,
+      "end": 220
+    },
+    "pageCount": 54,
+    "privatePdf": "private/books/ddia/parts/05-replication.pdf"
+  },
+  {
+    "chapterId": "ch06",
+    "chapter": 6,
+    "order": 6,
+    "part": "distributed-data",
+    "slug": "partitioning",
+    "titleZh": "分区",
+    "titleEn": "Partitioning",
+    "sourcePages": {
+      "start": 221,
+      "end": 242
+    },
+    "pageCount": 22,
+    "privatePdf": "private/books/ddia/parts/06-partitioning.pdf"
+  },
+  {
+    "chapterId": "ch07",
+    "chapter": 7,
+    "order": 7,
+    "part": "distributed-data",
+    "slug": "transactions",
+    "titleZh": "事务",
+    "titleEn": "Transactions",
+    "sourcePages": {
+      "start": 243,
+      "end": 294
+    },
+    "pageCount": 52,
+    "privatePdf": "private/books/ddia/parts/07-transactions.pdf"
+  },
+  {
+    "chapterId": "ch08",
+    "chapter": 8,
+    "order": 8,
+    "part": "distributed-data",
+    "slug": "trouble-with-distributed-systems",
+    "titleZh": "分布式系统的麻烦",
+    "titleEn": "The Trouble with Distributed Systems",
+    "sourcePages": {
+      "start": 295,
+      "end": 342
+    },
+    "pageCount": 48,
+    "privatePdf": "private/books/ddia/parts/08-trouble-with-distributed-systems.pdf"
+  },
+  {
+    "chapterId": "ch09",
+    "chapter": 9,
+    "order": 9,
+    "part": "distributed-data",
+    "slug": "consistency-consensus",
+    "titleZh": "一致性与共识",
+    "titleEn": "Consistency and Consensus",
+    "sourcePages": {
+      "start": 343,
+      "end": 406
+    },
+    "pageCount": 64,
+    "privatePdf": "private/books/ddia/parts/09-consistency-consensus.pdf"
+  },
+  {
+    "chapterId": "ch10",
+    "chapter": 10,
+    "order": 10,
+    "part": "derived-data",
+    "slug": "batch-processing",
+    "titleZh": "批处理",
+    "titleEn": "Batch Processing",
+    "sourcePages": {
+      "start": 407,
+      "end": 460
+    },
+    "pageCount": 54,
+    "privatePdf": "private/books/ddia/parts/10-batch-processing.pdf"
+  },
+  {
+    "chapterId": "ch11",
+    "chapter": 11,
+    "order": 11,
+    "part": "derived-data",
+    "slug": "stream-processing",
+    "titleZh": "流处理",
+    "titleEn": "Stream Processing",
+    "sourcePages": {
+      "start": 461,
+      "end": 510
+    },
+    "pageCount": 50,
+    "privatePdf": "private/books/ddia/parts/11-stream-processing.pdf"
+  },
+  {
+    "chapterId": "ch12",
+    "chapter": 12,
+    "order": 12,
+    "part": "derived-data",
+    "slug": "future-of-data-systems",
+    "titleZh": "数据系统的未来",
+    "titleEn": "The Future of Data Systems",
+    "sourcePages": {
+      "start": 511,
+      "end": 574
+    },
+    "pageCount": 64,
+    "privatePdf": "private/books/ddia/parts/12-future-of-data-systems.pdf"
+  },
+  {
+    "chapterId": "99-glossary-index",
+    "chapter": 99,
+    "order": 13,
+    "part": "back",
+    "slug": "99-glossary-index",
+    "titleZh": "术语表与索引",
+    "titleEn": "Glossary and Index",
+    "sourcePages": {
+      "start": 575,
+      "end": 613
+    },
+    "pageCount": 39,
+    "privatePdf": "private/books/ddia/parts/99-glossary-index.pdf"
+  }
+]

@@ -1,0 +1,846 @@
+{
+  "chapters": [
+    {
+      "chapter": 1,
+      "chapterId": "ch01",
+      "part": "Part I · 数据系统基础",
+      "slug": "reliable-scalable-maintainable",
+      "titleZh": "可靠、可扩展与可维护",
+      "titleEn": "Reliable, Scalable, and Maintainable Applications",
+      "sourcePages": "25-48",
+      "walkthroughPath": "/chapters/reliable-scalable-maintainable",
+      "questions": [
+        {
+          "title": "设计短链服务",
+          "shortTitle": "设计短链服务",
+          "slug": "url-shortener",
+          "type": "product",
+          "path": "/questions/url-shortener"
+        },
+        {
+          "title": "设计可扩展限流平台",
+          "shortTitle": "设计可扩展限流平台",
+          "slug": "rate-limiter",
+          "type": "mechanism",
+          "path": "/questions/rate-limiter"
+        },
+        {
+          "title": "排查流量突增下的 P99 延迟",
+          "shortTitle": "排查流量突增下的 P99 延迟",
+          "slug": "p99-latency-incident",
+          "type": "incident",
+          "path": "/questions/p99-latency-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "chapterId": "ch02",
+      "part": "Part I · 数据系统基础",
+      "slug": "data-models-query-languages",
+      "titleZh": "数据模型与查询语言",
+      "titleEn": "Data Models and Query Languages",
+      "sourcePages": "49-90",
+      "walkthroughPath": "/chapters/data-models-query-languages",
+      "questions": [
+        {
+          "title": "设计社交关系与 Feed 数据层",
+          "shortTitle": "设计社交关系与 Feed 数据层",
+          "slug": "social-graph-feed",
+          "type": "product",
+          "path": "/questions/social-graph-feed"
+        },
+        {
+          "title": "为商品目录选择数据模型",
+          "shortTitle": "为商品目录选择数据模型",
+          "slug": "product-catalog-model",
+          "type": "mechanism",
+          "path": "/questions/product-catalog-model"
+        },
+        {
+          "title": "修复反规范化一致性事故",
+          "shortTitle": "修复反规范化一致性事故",
+          "slug": "denormalization-incident",
+          "type": "incident",
+          "path": "/questions/denormalization-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "chapterId": "ch03",
+      "part": "Part I · 数据系统基础",
+      "slug": "storage-retrieval",
+      "titleZh": "存储与检索",
+      "titleEn": "Storage and Retrieval",
+      "sourcePages": "91-132",
+      "walkthroughPath": "/chapters/storage-retrieval",
+      "questions": [
+        {
+          "title": "设计搜索与自动补全存储层",
+          "shortTitle": "设计搜索与自动补全存储层",
+          "slug": "search-autocomplete",
+          "type": "product",
+          "path": "/questions/search-autocomplete"
+        },
+        {
+          "title": "设计 LSM-Tree KV Store",
+          "shortTitle": "设计 LSM-Tree KV Store",
+          "slug": "lsm-kv-store",
+          "type": "mechanism",
+          "path": "/questions/lsm-kv-store"
+        },
+        {
+          "title": "排查 Compaction 尾延迟事故",
+          "shortTitle": "排查 Compaction 尾延迟事故",
+          "slug": "compaction-incident",
+          "type": "incident",
+          "path": "/questions/compaction-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "chapterId": "ch04",
+      "part": "Part I · 数据系统基础",
+      "slug": "encoding-evolution",
+      "titleZh": "编码与演化",
+      "titleEn": "Encoding and Evolution",
+      "sourcePages": "133-166",
+      "walkthroughPath": "/chapters/encoding-evolution",
+      "questions": [
+        {
+          "title": "设计可演进的公共 API 与事件格式",
+          "shortTitle": "设计可演进的公共 API 与事件格式",
+          "slug": "evolvable-api-events",
+          "type": "product",
+          "path": "/questions/evolvable-api-events"
+        },
+        {
+          "title": "设计 Schema Registry",
+          "shortTitle": "设计 Schema Registry",
+          "slug": "schema-registry",
+          "type": "mechanism",
+          "path": "/questions/schema-registry"
+        },
+        {
+          "title": "处理滚动发布反序列化故障",
+          "shortTitle": "处理滚动发布反序列化故障",
+          "slug": "serialization-rollout-incident",
+          "type": "incident",
+          "path": "/questions/serialization-rollout-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "chapterId": "ch05",
+      "part": "Part II · 分布式数据",
+      "slug": "replication",
+      "titleZh": "复制",
+      "titleEn": "Replication",
+      "sourcePages": "167-220",
+      "walkthroughPath": "/chapters/replication",
+      "questions": [
+        {
+          "title": "设计多地域用户数据服务",
+          "shortTitle": "设计多地域用户数据服务",
+          "slug": "multi-region-profile",
+          "type": "product",
+          "path": "/questions/multi-region-profile"
+        },
+        {
+          "title": "设计 Leaderless Quorum KV Store",
+          "shortTitle": "设计 Leaderless Quorum KV Store",
+          "slug": "leaderless-quorum-kv",
+          "type": "mechanism",
+          "path": "/questions/leaderless-quorum-kv"
+        },
+        {
+          "title": "处理复制延迟与冲突事故",
+          "shortTitle": "处理复制延迟与冲突事故",
+          "slug": "replication-lag-incident",
+          "type": "incident",
+          "path": "/questions/replication-lag-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "chapterId": "ch06",
+      "part": "Part II · 分布式数据",
+      "slug": "partitioning",
+      "titleZh": "分区",
+      "titleEn": "Partitioning",
+      "sourcePages": "221-242",
+      "walkthroughPath": "/chapters/partitioning",
+      "questions": [
+        {
+          "title": "设计海量聊天记录分片",
+          "shortTitle": "设计海量聊天记录分片",
+          "slug": "sharded-chat-history",
+          "type": "product",
+          "path": "/questions/sharded-chat-history"
+        },
+        {
+          "title": "设计一致性哈希与在线再均衡",
+          "shortTitle": "设计一致性哈希与在线再均衡",
+          "slug": "consistent-hash-rebalance",
+          "type": "mechanism",
+          "path": "/questions/consistent-hash-rebalance"
+        },
+        {
+          "title": "处理热点分片与扩容雪崩",
+          "shortTitle": "处理热点分片与扩容雪崩",
+          "slug": "hot-shard-incident",
+          "type": "incident",
+          "path": "/questions/hot-shard-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 7,
+      "chapterId": "ch07",
+      "part": "Part II · 分布式数据",
+      "slug": "transactions",
+      "titleZh": "事务",
+      "titleEn": "Transactions",
+      "sourcePages": "243-294",
+      "walkthroughPath": "/chapters/transactions",
+      "questions": [
+        {
+          "title": "设计票务预订与支付事务",
+          "shortTitle": "设计票务预订与支付事务",
+          "slug": "ticket-booking",
+          "type": "product",
+          "path": "/questions/ticket-booking"
+        },
+        {
+          "title": "设计 MVCC 与 SSI",
+          "shortTitle": "设计 MVCC 与 SSI",
+          "slug": "mvcc-ssi-engine",
+          "type": "mechanism",
+          "path": "/questions/mvcc-ssi-engine"
+        },
+        {
+          "title": "排查 Write Skew 与重复预订",
+          "shortTitle": "排查 Write Skew 与重复预订",
+          "slug": "write-skew-incident",
+          "type": "incident",
+          "path": "/questions/write-skew-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 8,
+      "chapterId": "ch08",
+      "part": "Part II · 分布式数据",
+      "slug": "distributed-systems-trouble",
+      "titleZh": "分布式系统的麻烦",
+      "titleEn": "The Trouble with Distributed Systems",
+      "sourcePages": "295-342",
+      "walkthroughPath": "/chapters/distributed-systems-trouble",
+      "questions": [
+        {
+          "title": "设计带 Lease 的分布式任务调度器",
+          "shortTitle": "设计带 Lease 的分布式任务调度器",
+          "slug": "lease-job-scheduler",
+          "type": "product",
+          "path": "/questions/lease-job-scheduler"
+        },
+        {
+          "title": "设计故障检测与 Fencing",
+          "shortTitle": "设计故障检测与 Fencing",
+          "slug": "failure-detector-fencing",
+          "type": "mechanism",
+          "path": "/questions/failure-detector-fencing"
+        },
+        {
+          "title": "处理时钟漂移与 Split-Brain",
+          "shortTitle": "处理时钟漂移与 Split-Brain",
+          "slug": "clock-split-brain-incident",
+          "type": "incident",
+          "path": "/questions/clock-split-brain-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 9,
+      "chapterId": "ch09",
+      "part": "Part II · 分布式数据",
+      "slug": "consistency-consensus",
+      "titleZh": "一致性与共识",
+      "titleEn": "Consistency and Consensus",
+      "sourcePages": "343-406",
+      "walkthroughPath": "/chapters/consistency-consensus",
+      "questions": [
+        {
+          "title": "设计高可用配置与元数据服务",
+          "shortTitle": "设计高可用配置与元数据服务",
+          "slug": "metadata-service",
+          "type": "product",
+          "path": "/questions/metadata-service"
+        },
+        {
+          "title": "设计共识日志与 Leader Election",
+          "shortTitle": "设计共识日志与 Leader Election",
+          "slug": "consensus-log",
+          "type": "mechanism",
+          "path": "/questions/consensus-log"
+        },
+        {
+          "title": "处理 2PC 协调者故障",
+          "shortTitle": "处理 2PC 协调者故障",
+          "slug": "two-phase-commit-incident",
+          "type": "incident",
+          "path": "/questions/two-phase-commit-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 10,
+      "chapterId": "ch10",
+      "part": "Part III · 派生数据",
+      "slug": "batch-processing",
+      "titleZh": "批处理",
+      "titleEn": "Batch Processing",
+      "sourcePages": "407-460",
+      "walkthroughPath": "/chapters/batch-processing",
+      "questions": [
+        {
+          "title": "设计批量网页抓取与索引流水线",
+          "shortTitle": "设计批量网页抓取与索引流水线",
+          "slug": "batch-crawl-index",
+          "type": "product",
+          "path": "/questions/batch-crawl-index"
+        },
+        {
+          "title": "设计分布式 Join 与 MapReduce",
+          "shortTitle": "设计分布式 Join 与 MapReduce",
+          "slug": "distributed-join",
+          "type": "mechanism",
+          "path": "/questions/distributed-join"
+        },
+        {
+          "title": "处理 Straggler 与重复输出",
+          "shortTitle": "处理 Straggler 与重复输出",
+          "slug": "batch-straggler-incident",
+          "type": "incident",
+          "path": "/questions/batch-straggler-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 11,
+      "chapterId": "ch11",
+      "part": "Part III · 派生数据",
+      "slug": "stream-processing",
+      "titleZh": "流处理",
+      "titleEn": "Stream Processing",
+      "sourcePages": "461-510",
+      "walkthroughPath": "/chapters/stream-processing",
+      "questions": [
+        {
+          "title": "设计实时风控与指标平台",
+          "shortTitle": "设计实时风控与指标平台",
+          "slug": "realtime-risk-metrics",
+          "type": "product",
+          "path": "/questions/realtime-risk-metrics"
+        },
+        {
+          "title": "设计 Exactly-Once 窗口处理器",
+          "shortTitle": "设计 Exactly-Once 窗口处理器",
+          "slug": "exactly-once-stream",
+          "type": "mechanism",
+          "path": "/questions/exactly-once-stream"
+        },
+        {
+          "title": "处理迟到数据、回放与背压",
+          "shortTitle": "处理迟到数据、回放与背压",
+          "slug": "stream-backpressure-incident",
+          "type": "incident",
+          "path": "/questions/stream-backpressure-incident"
+        }
+      ]
+    },
+    {
+      "chapter": 12,
+      "chapterId": "ch12",
+      "part": "Part III · 派生数据",
+      "slug": "future-data-systems",
+      "titleZh": "数据系统的未来",
+      "titleEn": "The Future of Data Systems",
+      "sourcePages": "511-574",
+      "walkthroughPath": "/chapters/future-data-systems",
+      "questions": [
+        {
+          "title": "设计统一事件驱动数据平台",
+          "shortTitle": "设计统一事件驱动数据平台",
+          "slug": "unified-event-platform",
+          "type": "product",
+          "path": "/questions/unified-event-platform"
+        },
+        {
+          "title": "用 CDC 构建派生视图",
+          "shortTitle": "用 CDC 构建派生视图",
+          "slug": "cdc-derived-views",
+          "type": "mechanism",
+          "path": "/questions/cdc-derived-views"
+        },
+        {
+          "title": "处理跨系统隐私删除事故",
+          "shortTitle": "处理跨系统隐私删除事故",
+          "slug": "privacy-deletion-incident",
+          "type": "incident",
+          "path": "/questions/privacy-deletion-incident"
+        }
+      ]
+    }
+  ],
+  "walkthroughs": {
+    "1": {
+      "title": "可靠、可扩展与可维护",
+      "steps": [
+        {
+          "from": "请求",
+          "focus": "负载参数",
+          "to": "容量模型",
+          "label": "描述负载",
+          "detail": "用 QPS、读写比、对象大小与热点比例描述压力，而不是只说用户很多。",
+          "tradeoff": "参数选错会让压测结果与生产现实脱节。"
+        },
+        {
+          "from": "容量模型",
+          "focus": "P50/P95/P99",
+          "to": "SLO",
+          "label": "描述性能",
+          "detail": "同时观察吞吐和延迟分布，并明确过载时允许牺牲什么。",
+          "tradeoff": "更严格的尾延迟目标意味着更高冗余和成本。"
+        },
+        {
+          "from": "SLO",
+          "focus": "隔离与冗余",
+          "to": "降级路径",
+          "label": "吸收故障",
+          "detail": "用超时、隔离、重试预算和冗余把局部故障限制在边界内。",
+          "tradeoff": "重试若无预算会把局部故障放大为全局雪崩。"
+        },
+        {
+          "from": "降级路径",
+          "focus": "可观测性",
+          "to": "持续演进",
+          "label": "让系统可维护",
+          "detail": "把运行手册、指标、变更审计与简单接口当作架构的一部分。",
+          "tradeoff": "复杂度预算和机器预算一样有限。"
+        }
+      ]
+    },
+    "2": {
+      "title": "数据模型与查询语言",
+      "steps": [
+        {
+          "from": "业务问题",
+          "focus": "访问路径",
+          "to": "关系基数",
+          "label": "先画访问路径",
+          "detail": "列出最常见的写入、点查、范围查询与多跳遍历。",
+          "tradeoff": "只看实体名会遗漏真正决定性能的访问模式。"
+        },
+        {
+          "from": "关系基数",
+          "focus": "主数据模型",
+          "to": "事务边界",
+          "label": "选择主模型",
+          "detail": "局部聚合偏文档，复杂关系与约束偏关系，多跳发现偏图。",
+          "tradeoff": "跨模型事务会增加协调与恢复成本。"
+        },
+        {
+          "from": "主数据模型",
+          "focus": "派生索引",
+          "to": "查询体验",
+          "label": "补足次要查询",
+          "detail": "通过搜索索引、缓存或图投影服务不同查询，但保留单一真相源。",
+          "tradeoff": "派生视图必须能重建并暴露新鲜度。"
+        },
+        {
+          "from": "模型变更",
+          "focus": "兼容迁移",
+          "to": "长期演化",
+          "label": "为未来留迁移路径",
+          "detail": "双读验证、后台回填和版本字段比一次停机迁移更稳健。",
+          "tradeoff": "长期双写会制造难以证明的一致性。"
+        }
+      ]
+    },
+    "3": {
+      "title": "存储与检索",
+      "steps": [
+        {
+          "from": "写请求",
+          "focus": "WAL + Memtable",
+          "to": "已确认写入",
+          "label": "接收写入",
+          "detail": "先顺序追加 WAL，再更新内存有序结构，确认持久性后返回。",
+          "tradeoff": "每次强制刷盘更安全但会限制吞吐。"
+        },
+        {
+          "from": "Memtable",
+          "focus": "SSTable",
+          "to": "不可变文件",
+          "label": "冻结与刷盘",
+          "detail": "达到阈值后冻结内存表并顺序写出有索引的 SSTable。",
+          "tradeoff": "文件过多会增加每次读取需要探测的层数。"
+        },
+        {
+          "from": "多个 SSTable",
+          "focus": "Compaction",
+          "to": "更少层级",
+          "label": "后台压实",
+          "detail": "合并有序文件、清除过期版本并维持层级大小约束。",
+          "tradeoff": "压实会产生写放大并与前台请求争夺 I/O。"
+        },
+        {
+          "from": "读请求",
+          "focus": "Bloom + Cache",
+          "to": "最新值",
+          "label": "缩小读放大",
+          "detail": "先查内存和缓存，再用 Bloom Filter 跳过不含 key 的文件。",
+          "tradeoff": "缓存命中率依赖真实工作集而非总数据量。"
+        }
+      ]
+    },
+    "4": {
+      "title": "编码与演化",
+      "steps": [
+        {
+          "from": "领域对象",
+          "focus": "Schema",
+          "to": "编码字节",
+          "label": "定义稳定契约",
+          "detail": "明确字段编号、类型、可选性与默认语义，而非只定义当前类结构。",
+          "tradeoff": "过度严格会阻碍演化，过度宽松会隐藏数据错误。"
+        },
+        {
+          "from": "新生产者",
+          "focus": "兼容检查",
+          "to": "旧消费者",
+          "label": "验证双向兼容",
+          "detail": "在 CI 中用历史 schema 检查新增、删除和类型变化。",
+          "tradeoff": "语法兼容不保证业务语义兼容。"
+        },
+        {
+          "from": "旧数据",
+          "focus": "双读/回填",
+          "to": "新模型",
+          "label": "迁移存量",
+          "detail": "读取时升级或后台回填，并记录仍在使用旧格式的比例。",
+          "tradeoff": "大规模回填会挤占在线存储吞吐。"
+        },
+        {
+          "from": "全链路",
+          "focus": "废弃观测",
+          "to": "删除旧路径",
+          "label": "安全收尾",
+          "detail": "确认旧生产者、旧数据和旧消费者都清零后再移除兼容代码。",
+          "tradeoff": "过早清理会让延迟到达的消息变成毒消息。"
+        }
+      ]
+    },
+    "5": {
+      "title": "复制",
+      "steps": [
+        {
+          "from": "客户端写",
+          "focus": "Leader 日志",
+          "to": "本地确认",
+          "label": "建立写入顺序",
+          "detail": "Leader 串行化写入并记录复制位置。",
+          "tradeoff": "单 Leader 简化冲突，但限制写入可用地域。"
+        },
+        {
+          "from": "Leader 日志",
+          "focus": "Follower",
+          "to": "复制进度",
+          "label": "传播变更",
+          "detail": "Follower 按日志顺序应用变更并报告 offset。",
+          "tradeoff": "异步链路会产生可见复制延迟。"
+        },
+        {
+          "from": "客户端读",
+          "focus": "会话水位",
+          "to": "合格副本",
+          "label": "提供会话保证",
+          "detail": "携带最近写入位置，只路由到已追上的副本或回到 Leader。",
+          "tradeoff": "更强保证会降低可用副本选择空间。"
+        },
+        {
+          "from": "节点故障",
+          "focus": "选主与 fencing",
+          "to": "新拓扑",
+          "label": "安全切换",
+          "detail": "选取日志足够新的节点，并阻止旧 Leader 继续接受写入。",
+          "tradeoff": "错误故障检测可能同时产生两个 Leader。"
+        }
+      ]
+    },
+    "6": {
+      "title": "分区",
+      "steps": [
+        {
+          "from": "逻辑 key",
+          "focus": "分区函数",
+          "to": "逻辑分区",
+          "label": "计算归属",
+          "detail": "在稳定的逻辑分区空间中映射 key，避免直接绑定机器数量。",
+          "tradeoff": "哈希均匀性会牺牲范围查询局部性。"
+        },
+        {
+          "from": "逻辑分区",
+          "focus": "所有权表",
+          "to": "存储节点",
+          "label": "解析物理位置",
+          "detail": "协调服务维护版本化所有权，路由层缓存并能刷新。",
+          "tradeoff": "集中路由信息必须高可用且防止旧版本写入。"
+        },
+        {
+          "from": "旧节点",
+          "focus": "后台复制",
+          "to": "新节点",
+          "label": "在线迁移",
+          "detail": "限速复制快照，再追增量日志，期间旧节点继续服务。",
+          "tradeoff": "迁移流量会与线上请求争夺网络和磁盘。"
+        },
+        {
+          "from": "路由层",
+          "focus": "原子切换",
+          "to": "新所有者",
+          "label": "完成再均衡",
+          "detail": "切换 epoch 后用 fencing 拒绝旧所有者写入，最后清理数据。",
+          "tradeoff": "没有 epoch 的双写窗口可能产生分叉。"
+        }
+      ]
+    },
+    "7": {
+      "title": "事务",
+      "steps": [
+        {
+          "from": "事务开始",
+          "focus": "一致快照",
+          "to": "读取版本",
+          "label": "建立可见性",
+          "detail": "事务读取开始时已提交版本，避免看到中途变化。",
+          "tradeoff": "长快照会阻止旧版本清理并放大存储。"
+        },
+        {
+          "from": "并发写",
+          "focus": "版本/锁",
+          "to": "冲突集合",
+          "label": "检测直接冲突",
+          "detail": "同一对象写入用锁、CAS 或版本检查避免丢失更新。",
+          "tradeoff": "只检测写写冲突无法发现 write skew。"
+        },
+        {
+          "from": "读写依赖",
+          "focus": "SSI",
+          "to": "危险结构",
+          "label": "发现序列化风险",
+          "detail": "跟踪 rw 反依赖，在可能形成环时中止一个事务。",
+          "tradeoff": "误中止提高安全性但要求应用可靠重试。"
+        },
+        {
+          "from": "提交请求",
+          "focus": "WAL + 原子提交",
+          "to": "可见结果",
+          "label": "持久化或回滚",
+          "detail": "所有变更获得同一提交结果，崩溃恢复从日志重放。",
+          "tradeoff": "跨服务原子提交会降低可用性并扩大锁范围。"
+        }
+      ]
+    },
+    "8": {
+      "title": "分布式系统的麻烦",
+      "steps": [
+        {
+          "from": "Worker",
+          "focus": "申请 lease",
+          "to": "协调器",
+          "label": "获得临时所有权",
+          "detail": "协调器返回过期时间和单调递增 token。",
+          "tradeoff": "lease 依赖时间，必须给时钟误差和网络延迟留余量。"
+        },
+        {
+          "from": "协调器",
+          "focus": "Token 42",
+          "to": "存储层",
+          "label": "传播 fencing",
+          "detail": "所有有副作用的写都携带 token，存储记录已见最大值。",
+          "tradeoff": "若下游不校验，token 只是装饰。"
+        },
+        {
+          "from": "Worker",
+          "focus": "长时间暂停",
+          "to": "Lease 过期",
+          "label": "制造部分失败",
+          "detail": "另一个 worker 获得 Token 43 并继续任务。",
+          "tradeoff": "超时无法判断旧 worker 当前是否仍在执行。"
+        },
+        {
+          "from": "旧 Worker",
+          "focus": "Token 42 被拒",
+          "to": "正确状态",
+          "label": "隔离过期参与者",
+          "detail": "恢复后的旧写因 token 小于 43 被拒绝并放弃。",
+          "tradeoff": "所有写路径都必须执行相同检查。"
+        }
+      ]
+    },
+    "9": {
+      "title": "一致性与共识",
+      "steps": [
+        {
+          "from": "客户端命令",
+          "focus": "Leader",
+          "to": "日志槽位",
+          "label": "提出值",
+          "detail": "Leader 为命令分配递增 index 和当前 term。",
+          "tradeoff": "Leader 不是永久权威，合法性来自多数派。"
+        },
+        {
+          "from": "日志条目",
+          "focus": "多数派复制",
+          "to": "Commit index",
+          "label": "达成共识",
+          "detail": "多数节点持久化后，条目才能被视为提交。",
+          "tradeoff": "等待多数派会把最慢必要副本的延迟放入路径。"
+        },
+        {
+          "from": "Commit index",
+          "focus": "状态机",
+          "to": "一致状态",
+          "label": "确定性应用",
+          "detail": "所有节点按相同顺序执行相同命令。",
+          "tradeoff": "状态机包含非确定行为会导致副本分叉。"
+        },
+        {
+          "from": "Leader 故障",
+          "focus": "新 term 选举",
+          "to": "继续服务",
+          "label": "恢复进展",
+          "detail": "拥有足够新日志的候选者赢得多数票并修复落后副本。",
+          "tradeoff": "少数派在分区期间必须停止写入。"
+        }
+      ]
+    },
+    "10": {
+      "title": "批处理",
+      "steps": [
+        {
+          "from": "不可变输入",
+          "focus": "Map",
+          "to": "键值对",
+          "label": "并行转换",
+          "detail": "按输入分片执行确定性函数，失败分片可独立重跑。",
+          "tradeoff": "外部副作用会破坏可重放性。"
+        },
+        {
+          "from": "键值对",
+          "focus": "Shuffle",
+          "to": "同 key 分区",
+          "label": "重新分组",
+          "detail": "按 key 分区、排序并跨网络传输到 reducer。",
+          "tradeoff": "数据倾斜会让单个 reducer 成为长尾。"
+        },
+        {
+          "from": "同 key 记录",
+          "focus": "Reduce",
+          "to": "派生分区",
+          "label": "聚合或 join",
+          "detail": "对同一 key 的完整记录集执行聚合。",
+          "tradeoff": "大 key 可能撑爆单机内存，需要二阶段聚合。"
+        },
+        {
+          "from": "临时输出",
+          "focus": "原子发布",
+          "to": "新数据集",
+          "label": "提交结果",
+          "detail": "所有分区成功后切换版本指针，旧版本保留用于回滚。",
+          "tradeoff": "保留过多历史版本会增加存储和治理成本。"
+        }
+      ]
+    },
+    "11": {
+      "title": "流处理",
+      "steps": [
+        {
+          "from": "事件生产者",
+          "focus": "分区日志",
+          "to": "Offset",
+          "label": "持久化事件",
+          "detail": "按 key 分区保持局部顺序，日志保留允许消费者重放。",
+          "tradeoff": "全局顺序会限制并行度。"
+        },
+        {
+          "from": "日志",
+          "focus": "状态算子",
+          "to": "窗口状态",
+          "label": "按事件时间计算",
+          "detail": "算子更新 keyed state，并用 watermark 管理窗口生命周期。",
+          "tradeoff": "允许更晚数据会增加状态保留和结果修正。"
+        },
+        {
+          "from": "状态 + Offset",
+          "focus": "Checkpoint",
+          "to": "一致快照",
+          "label": "建立恢复点",
+          "detail": "同时记录算子状态和输入位置，故障后从同一边界恢复。",
+          "tradeoff": "checkpoint 过频会消耗 I/O，过慢则增加恢复重放。"
+        },
+        {
+          "from": "计算结果",
+          "focus": "幂等/事务 Sink",
+          "to": "外部系统",
+          "label": "端到端提交",
+          "detail": "用事务、唯一事件 ID 或 upsert 保证重放不重复生效。",
+          "tradeoff": "最弱的 sink 决定端到端语义。"
+        }
+      ]
+    },
+    "12": {
+      "title": "数据系统的未来",
+      "steps": [
+        {
+          "from": "业务命令",
+          "focus": "事实系统",
+          "to": "提交日志",
+          "label": "记录不可争议事实",
+          "detail": "事务边界只负责核心状态和变更事件的原子产生。",
+          "tradeoff": "事实模型过度承载查询需求会难以演化。"
+        },
+        {
+          "from": "提交日志",
+          "focus": "CDC/事件总线",
+          "to": "订阅者",
+          "label": "传播变化",
+          "detail": "统一顺序与 offset 让多个派生系统独立消费和重放。",
+          "tradeoff": "日志保留期限限制最远可恢复时间。"
+        },
+        {
+          "from": "订阅者",
+          "focus": "确定性投影",
+          "to": "索引/缓存/数仓",
+          "label": "建立专用视图",
+          "detail": "每个系统针对自身查询优化，并记录来源版本。",
+          "tradeoff": "不可重现的外部调用会让回放结果漂移。"
+        },
+        {
+          "from": "审计与删除",
+          "focus": "数据血缘",
+          "to": "全链路证明",
+          "label": "验证正确和负责使用",
+          "detail": "对账检测丢失更新，删除事件沿血缘传播并留下合规证明。",
+          "tradeoff": "删除与不可变日志之间需要密钥擦除或分层保留策略。"
+        }
+      ]
+    }
+  }
+}
