@@ -21,6 +21,7 @@
 * { letter-spacing: 0; }
 .VPDoc.has-aside .content-container { max-width: 820px; }
 .vp-doc div[class*='language-'] { border-radius: 6px; }
+.vp-doc h2, .vp-doc h3 { scroll-margin-top: 108px; }
 .eyebrow { margin: 0 0 6px; color: var(--vp-c-brand-1); font-size: 12px; font-weight: 800; text-transform: uppercase; }
 .chapter-subtitle { margin-top: -16px; color: var(--vp-c-text-2); font-size: 17px; }
 
@@ -110,4 +111,3 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
-

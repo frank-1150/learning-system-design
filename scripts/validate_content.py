@@ -41,6 +41,15 @@ def main() -> None:
         "ch01.md": ["Fault 不是 Failure", "tail latency amplification", "Maintainability"],
         "ch02.md": ["Object-relational mismatch", "Declarative", "Graph-like Data Models"],
         "ch03.md": ["SSTable 与 LSM-Tree", "B-Tree", "Column-oriented Storage"],
+        "ch04.md": ["Thrift 与 Protocol Buffers", "Avro", "消息传递"],
+        "ch05.md": ["Replication lag", "Multi-leader", "Version vector"],
+        "ch06.md": ["Key-range partitioning", "Rebalancing", "Request routing"],
+        "ch07.md": ["Snapshot Isolation", "Write Skew", "Serializable Snapshot Isolation"],
+        "ch08.md": ["Unreliable network", "Process pause", "Byzantine faults"],
+        "ch09.md": ["Linearizability", "Total-order broadcast", "Fault-tolerant consensus"],
+        "ch10.md": ["MapReduce", "Reduce-side join", "Dataflow engine"],
+        "ch11.md": ["Partitioned log", "Change Data Capture", "Stream joins"],
+        "ch12.md": ["Data integration", "Unbundling databases", "Aiming for correctness"],
     }
     for filename, markers in deep_dive_requirements.items():
         source = ROOT / "content-src/chapters" / filename
@@ -56,7 +65,7 @@ def main() -> None:
             index = DOCS / link.strip("/") / "index.md"
             assert target.exists() or index.exists() or link == "/", f"dead link in {page}: {link}"
 
-    print("Validated 12 walkthroughs, 36 questions, Ch1-3 deep dives, links, and private PDF boundary")
+    print("Validated 12 deep-dive walkthroughs, 36 questions, links, and private PDF boundary")
 
 
 if __name__ == "__main__":
