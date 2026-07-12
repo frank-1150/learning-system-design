@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
+DEEP_DIVE_DIR = ROOT / "content-src/chapters"
 
 
 def bullets(value: str) -> str:
@@ -281,6 +282,44 @@ def write(path: Path, content: str) -> None:
 
 
 def chapter_markdown(ch: dict) -> str:
+    deep_dive = DEEP_DIVE_DIR / f"ch{ch['chapter']:02d}.md"
+    if deep_dive.exists():
+        body = deep_dive.read_text(encoding="utf-8").strip()
+        return f'''---
+chapterId: ch{ch['chapter']:02d}
+part: "{ch['part']}"
+order: {ch['chapter']}
+title: "Ch{ch['chapter']} · {ch['titleZh']}"
+titleZh: "{ch['titleZh']}"
+titleEn: "{ch['titleEn']}"
+sourcePages: "PDF {ch['pages']}"
+walkthroughPath: "/chapters/{ch['slug']}"
+questionPaths:
+{chr(10).join('  - /questions/' + item[1] for item in QUESTION_SETS[ch['chapter']])}
+visualizationPaths: ["walkthrough-explorer"]
+description: "DDIA 第 {ch['chapter']} 章中文精讲、工程实践与交互导读"
+---
+
+# Ch{ch['chapter']} · {ch['titleZh']}
+
+<p class="chapter-subtitle">{ch['titleEn']}</p>
+
+> **阅读范围**：DDIA 第一版 Chapter {ch['chapter']}，源 PDF 第 {ch['pages']} 页。本文按原书论证顺序进行中文精讲，并加入工程解释；它不替代原书原文。
+
+<ProgressToggle id="chapter-{ch['chapter']}" label="完成本章" />
+
+{body}
+
+## 本章面试题
+
+{chr(10).join(f'{i}. [{item[0]}](/questions/{item[1]})' for i, item in enumerate(QUESTION_SETS[ch['chapter']], 1))}
+
+## 来源与说明
+
+- Martin Kleppmann, *Designing Data-Intensive Applications*, First Edition, Chapter {ch['chapter']}, PDF pp. {ch['pages']}.
+- 文中的中文表述是解释性翻译；工程案例、检查表和延伸推导为本站原创。
+'''
+
     concepts = bullets(ch["concepts"])
     q = ch["check"]
     return f'''---

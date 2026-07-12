@@ -37,6 +37,18 @@ def main() -> None:
     public_pdfs = list((DOCS / "public").rglob("*.pdf"))
     assert not public_pdfs, f"private PDFs leaked into public: {public_pdfs}"
 
+    deep_dive_requirements = {
+        "ch01.md": ["Fault 不是 Failure", "tail latency amplification", "Maintainability"],
+        "ch02.md": ["Object-relational mismatch", "Declarative", "Graph-like Data Models"],
+        "ch03.md": ["SSTable 与 LSM-Tree", "B-Tree", "Column-oriented Storage"],
+    }
+    for filename, markers in deep_dive_requirements.items():
+        source = ROOT / "content-src/chapters" / filename
+        content = source.read_text(encoding="utf-8")
+        assert len(content) >= 5_000, f"{source}: deep-dive content is unexpectedly thin"
+        missing = [marker for marker in markers if marker not in content]
+        assert not missing, f"{source}: missing deep-dive sections {missing}"
+
     link_pattern = re.compile(r"\]\((/[^)#]+)")
     for page in DOCS.rglob("*.md"):
         for link in link_pattern.findall(page.read_text(encoding="utf-8")):
@@ -44,7 +56,7 @@ def main() -> None:
             index = DOCS / link.strip("/") / "index.md"
             assert target.exists() or index.exists() or link == "/", f"dead link in {page}: {link}"
 
-    print("Validated 12 walkthroughs, 36 questions, required sections, links, and private PDF boundary")
+    print("Validated 12 walkthroughs, 36 questions, Ch1-3 deep dives, links, and private PDF boundary")
 
 
 if __name__ == "__main__":
